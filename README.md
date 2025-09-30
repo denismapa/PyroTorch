@@ -35,7 +35,7 @@ A Python-based firewall audit tool that analyzes firewall rules from CSV exports
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/PyroTorch.git
+git clone https://github.com/denismapa/PyroTorch.git
 cd PyroTorch
 ```
 
@@ -47,7 +47,25 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install dependencies:
 ```bash
-pip install pandas reportlab
+pip install -r requirements.txt
+```
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/denismapa/PyroTorch.git
+cd PyroTorch
+
+# Set up virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the audit (output will be auto-named with timestamp)
+python firewall_audit.py sample_firewall_rules.csv output.pdf
 ```
 
 ## Usage
