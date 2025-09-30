@@ -65,7 +65,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run the audit (output will be auto-named with timestamp)
-python firewall_audit.py sample_firewall_rules.csv output.pdf
+python firewall_audit.py your_firewall_rules.csv output.pdf
 ```
 
 ## Usage
@@ -139,12 +139,6 @@ The tool expects CSV files exported from Palo Alto firewalls with the following 
 4. **Overly Permissive Rules Analysis** - Rules with any/all configurations
 5. **High Usage Rules Analysis** - Rules exceeding the usage threshold
 6. **Services, Ports & Protocols** - Breakdown of all services used
-
-## Sample Data
-
-Sample CSV files are included in the repository for testing:
-- `sample_firewall_rules.csv` - Basic test data
-- `enhanced_firewall_rules.csv` - Extended test data
 
 ## Output
 
